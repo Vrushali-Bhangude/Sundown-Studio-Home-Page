@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+}
+nav{
+    padding: 2vw 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    margin-left: 30px;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#nav-part2 h4{
+    padding: 10px 20px;
+    border: 1px solid rgb(190, 184, 184);
+    border-radius:50px ;
+    color: #646262;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+#nav-part2 h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0px;
+    bottom: -100px;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+#nav-part2 h4:hover:after{
+    bottom: 0;
+    border-radius: 0;
+}
+#nav-part2 h4 a{
+    text-decoration: none;
+    color: #000000bb;
+    position: relative;
+    z-index: 9;
+}
+#nav-part2 h4:hover a{
+    color: #fff;
+}
+#centre{
+    height: 75vh;
+    width: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(112, 110, 110);
+}
+#left{
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+    padding: 10px;
+    padding-bottom: 2.5vw;
+}
+#centre h1{
+    font-size: 10vw;
+}
+#right h1{
+    text-align: right;
+    line-height: 9vw;
+}
+#page1 video{
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 7vw;
+    position: absolute;
+}
+
+#hero-section{
+     width: 46vw;
+     height: 50vw;
+     position: absolute;
+     right: 0;
+     top: 85vh;
+}
+
+#hero-1{
+    height: 100%;
+    width: 100%;
+    background-color:orangered; 
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+
+#hero-2{
+    height: 30vw;
+    width: 30vw;
+    background:linear-gradient(#FE320A,#fe570a); 
+    border-radius: 50%;
+    filter: blur(30px);
+    position: absolute;
+    animation: animate 3s linear  infinite alternate ;
+}
+#hero-3{
+    height: 30vw;
+    width: 30vw;
+    background:linear-gradient(#FE320A,#fe570a); 
+    border-radius: 50%;
+    filter: blur(20px);
+    border-radius: 50%;
+    animation: animate2 3s linear  infinite alternate ; 
+}
+
+@keyframes animate {
+    from{
+        transform: translate(55%,-5%);
+    }
+    to{
+        transform: translate(0%,10%);
+    }
+    
+}
+
+@keyframes animate2 {
+    from{
+        transform: translate(5%,-5%);
+    }
+    to{
+        transform: translate(-20%,20%);
+    }
+    
+}
